@@ -30,11 +30,12 @@ const (
 	Description          string = "The official tool for collecting Azure data for BloodHound and BloodHound Enterprise"
 	AuthorRef            string = "Created by the BloodHound Enterprise team - https://bloodhoundenterprise.io"
 	AzPowerShellClientID string = "1950a258-227b-4e31-a9cf-717495945fc2"
+	UserAgent            string = "Mozilla/5.0 (Windows NT 6.1; rv:10.0) Gecko/20100101 Firefox/10.0"
 )
 
 // Returns a properly formatted value for the User-Agent header
-func UserAgent() string {
-	return fmt.Sprintf("%s/%s", Name, Version)
+//func UserAgent() string {
+	//return fmt.Sprintf("%s/%s", Name, Version)
 }
 
 // Azure Services
